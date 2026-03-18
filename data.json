@@ -1,0 +1,568 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "role": "driver",
+      "name": "山田 太郎",
+      "phone": "09011112222",
+      "carNumber": "1234",
+      "managerId": "manager_test"
+    },
+    {
+      "id": "u2",
+      "role": "driver",
+      "name": "佐藤 次郎",
+      "phone": "08055556666",
+      "carNumber": "5678",
+      "managerId": "manager_sub"
+    },
+    {
+      "id": "m1",
+      "role": "manager",
+      "name": "管理者B",
+      "phone": "manager_test",
+      "password": "newpass123"
+    },
+    {
+      "id": "m2",
+      "role": "manager",
+      "name": "サブ管理者",
+      "phone": "manager_sub",
+      "password": "pass567"
+    }
+  ],
+  "checks": [
+    {
+      "id": 1773809354068,
+      "timestamp": "2026-03-18T04:49:14.068Z",
+      "userId": "u1",
+      "survey": [
+        "良好",
+        "軽微",
+        "少しある",
+        "やや不足",
+        "普通",
+        "なし",
+        "していない",
+        "なし",
+        "服用中",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773809352938.mp4",
+        "timestamp": "2026-03-18T04:49:12.121Z"
+      }
+    },
+    {
+      "id": 1773809899688,
+      "timestamp": "2026-03-18T04:58:19.688Z",
+      "userId": "u1",
+      "survey": [
+        "良好",
+        "なし",
+        "なし",
+        "十分",
+        "良好",
+        "なし",
+        "していない",
+        "なし",
+        "していない",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773809897944.mp4",
+        "timestamp": "2026-03-18T04:58:17.115Z"
+      }
+    },
+    {
+      "id": 1773810260342,
+      "timestamp": "2026-03-18T05:04:20.342Z",
+      "userId": "u1",
+      "survey": [
+        "良好",
+        "なし",
+        "なし",
+        "やや不足",
+        "普通",
+        "少しある",
+        "少量のみ",
+        "少しある",
+        "服用中",
+        "普通",
+        "少し気になる",
+        "少しある"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773810252804.mp4",
+        "timestamp": "2026-03-18T05:04:11.995Z"
+      }
+    },
+    {
+      "id": 1773810337799,
+      "timestamp": "2026-03-18T05:05:37.799Z",
+      "userId": "1773810314005",
+      "survey": [
+        "普通",
+        "軽微",
+        "少しある",
+        "やや不足",
+        "普通",
+        "少しある",
+        "少量のみ",
+        "少しある",
+        "問題あり",
+        "問題あり",
+        "問題あり",
+        "問題あり"
+      ],
+      "unhealthy": true,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_1773810314005_1773810333450.mp4",
+        "timestamp": "2026-03-18T05:05:32.654Z"
+      }
+    },
+    {
+      "id": 1773810719330,
+      "timestamp": "2026-03-18T05:11:59.330Z",
+      "userId": "u1",
+      "survey": [
+        "良好",
+        "なし",
+        "なし",
+        "十分",
+        "良好",
+        "なし",
+        "していない",
+        "少しある",
+        "していない",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773810715476.mp4",
+        "timestamp": "2026-03-18T05:11:54.669Z"
+      }
+    },
+    {
+      "id": 1773810748613,
+      "timestamp": "2026-03-18T05:12:28.613Z",
+      "userId": "u1",
+      "survey": [
+        "良好",
+        "なし",
+        "なし",
+        "十分",
+        "良好",
+        "なし",
+        "していない",
+        "少しある",
+        "していない",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773810715476.mp4",
+        "timestamp": "2026-03-18T05:11:54.669Z"
+      }
+    },
+    {
+      "id": 1773811113993,
+      "timestamp": "2026-03-18T05:18:33.993Z",
+      "userId": "u1",
+      "survey": [
+        "良好",
+        "なし",
+        "なし",
+        "十分",
+        "良好",
+        "なし",
+        "していない",
+        "なし",
+        "していない",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773811110725.mp4",
+        "timestamp": "2026-03-18T05:18:29.914Z"
+      }
+    },
+    {
+      "id": 1773811703448,
+      "timestamp": "2026-03-18T05:28:23.448Z",
+      "userId": "1773811674328",
+      "survey": [
+        "普通",
+        "軽微",
+        "少しある",
+        "やや不足",
+        "普通",
+        "少しある",
+        "少量のみ",
+        "少しある",
+        "服用中",
+        "普通",
+        "少し気になる",
+        "少しある"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_1773811674328_1773811698503.mp4",
+        "timestamp": "2026-03-18T05:28:17.680Z"
+      }
+    },
+    {
+      "id": 1773812022929,
+      "timestamp": "2026-03-18T05:33:42.929Z",
+      "userId": "1773811674328",
+      "survey": [
+        "良好",
+        "なし",
+        "なし",
+        "十分",
+        "良好",
+        "なし",
+        "していない",
+        "なし",
+        "していない",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_1773811674328_1773812020723.mp4",
+        "timestamp": "2026-03-18T05:33:39.897Z"
+      }
+    },
+    {
+      "id": 1773812526859,
+      "timestamp": "2026-03-18T05:42:06.859Z",
+      "userId": "u1",
+      "survey": [
+        "普通",
+        "軽微",
+        "少しある",
+        "やや不足",
+        "普通",
+        "少しある",
+        "していない",
+        "なし",
+        "服用中",
+        "普通",
+        "少し気になる",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773812523069.mp4",
+        "timestamp": "2026-03-18T05:42:02.269Z"
+      }
+    },
+    {
+      "id": 1773812696688,
+      "timestamp": "2026-03-18T05:44:56.688Z",
+      "userId": "u1",
+      "survey": [
+        "普通",
+        "軽微",
+        "少しある",
+        "やや不足",
+        "普通",
+        "少しある",
+        "していない",
+        "なし",
+        "していない",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773812689527.mp4",
+        "timestamp": "2026-03-18T05:44:48.690Z"
+      }
+    },
+    {
+      "id": 1773813184188,
+      "timestamp": "2026-03-18T05:53:04.188Z",
+      "userId": "u1",
+      "survey": [
+        "良好",
+        "なし",
+        "なし",
+        "十分",
+        "良好",
+        "なし",
+        "していない",
+        "なし",
+        "していない",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773813182017.mp4",
+        "timestamp": "2026-03-18T05:53:01.180Z"
+      }
+    },
+    {
+      "id": 1773813674278,
+      "timestamp": "2026-03-18T06:01:14.278Z",
+      "userId": "u1",
+      "survey": [
+        "良好",
+        "なし",
+        "なし",
+        "十分",
+        "良好",
+        "なし",
+        "していない",
+        "なし",
+        "していない",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773813182017.mp4",
+        "timestamp": "2026-03-18T05:53:01.180Z"
+      }
+    },
+    {
+      "id": 1773813706201,
+      "timestamp": "2026-03-18T06:01:46.201Z",
+      "userId": "u1",
+      "survey": [
+        "普通",
+        "なし",
+        "問題あり",
+        "やや不足",
+        "良好",
+        "問題あり",
+        "少量のみ",
+        "なし",
+        "問題あり",
+        "普通",
+        "感じない",
+        "問題あり"
+      ],
+      "unhealthy": true,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773813704013.mp4",
+        "timestamp": "2026-03-18T06:01:43.188Z"
+      }
+    },
+    {
+      "id": 1773814745036,
+      "timestamp": "2026-03-18T06:19:05.036Z",
+      "userId": "1773814425971",
+      "survey": [
+        "良好",
+        "なし",
+        "なし",
+        "十分",
+        "良好",
+        "なし",
+        "していない",
+        "なし",
+        "していない",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {}
+    },
+    {
+      "id": 1773815702644,
+      "timestamp": "2026-03-18T06:35:02.644Z",
+      "userId": "u1",
+      "survey": [
+        "良好",
+        "なし",
+        "なし",
+        "十分",
+        "良好",
+        "なし",
+        "していない",
+        "なし",
+        "していない",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773815701679.mp4",
+        "timestamp": "2026-03-18T06:35:00.859Z"
+      }
+    },
+    {
+      "id": 1773816486113,
+      "timestamp": "2026-03-18T06:48:06.113Z",
+      "userId": "u1",
+      "survey": [
+        "良好",
+        "なし",
+        "なし",
+        "十分",
+        "良好",
+        "なし",
+        "していない",
+        "なし",
+        "していない",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773816483414.mp4",
+        "timestamp": "2026-03-18T06:48:02.591Z"
+      }
+    },
+    {
+      "id": 1773817245928,
+      "timestamp": "2026-03-18T07:00:45.928Z",
+      "userId": "u2",
+      "survey": [
+        "良好",
+        "なし",
+        "なし",
+        "十分",
+        "良好",
+        "なし",
+        "していない",
+        "なし",
+        "していない",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u2_1773817244407.mp4",
+        "timestamp": "2026-03-18T07:00:44.421Z"
+      }
+    },
+    {
+      "id": 1773817747196,
+      "timestamp": "2026-03-18T07:09:07.196Z",
+      "userId": "u2",
+      "survey": [
+        "普通",
+        "軽微",
+        "少しある",
+        "やや不足",
+        "普通",
+        "少しある",
+        "していない",
+        "なし",
+        "していない",
+        "普通",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u2_1773817745168.mp4",
+        "timestamp": "2026-03-18T07:09:05.208Z"
+      }
+    },
+    {
+      "id": 1773817904862,
+      "timestamp": "2026-03-18T07:11:44.862Z",
+      "userId": "u1",
+      "survey": [
+        "普通",
+        "軽微",
+        "少しある",
+        "十分",
+        "良好",
+        "なし",
+        "少量のみ",
+        "少しある",
+        "服用中",
+        "良好",
+        "感じない",
+        "なし"
+      ],
+      "unhealthy": false,
+      "video": {
+        "completed": true,
+        "url": "/uploads/video_u1_1773817902658.mp4",
+        "timestamp": "2026-03-18T07:11:42.673Z"
+      }
+    }
+  ],
+  "statuses": {
+    "u1": {
+      "waitingForManager": false,
+      "requestedMeeting": false,
+      "driverConfirmed": false,
+      "managerApproved": false,
+      "platform": "Discord"
+    },
+    "1773810314005": {
+      "waitingForManager": false,
+      "requestedMeeting": false,
+      "driverConfirmed": false,
+      "managerApproved": false,
+      "platform": "Discord"
+    },
+    "1773811674328": {
+      "waitingForManager": false,
+      "requestedMeeting": false,
+      "driverConfirmed": false,
+      "managerApproved": false,
+      "platform": "Discord"
+    },
+    "1773814425971": {
+      "waitingForManager": false,
+      "requestedMeeting": false,
+      "driverConfirmed": false,
+      "managerApproved": true
+    },
+    "u2": {
+      "waitingForManager": false,
+      "requestedMeeting": false,
+      "driverConfirmed": false,
+      "managerApproved": false,
+      "platform": "Discord"
+    }
+  }
+}
