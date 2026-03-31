@@ -151,7 +151,7 @@ const VideoCheck = () => {
                     overflow: 'hidden', position: 'relative', marginBottom: '16px'
                 }}>
                     {!videoUrl ? (
-                        <video ref={videoRef} autoPlay playsInline muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        <video ref={videoRef} autoPlay playsInline muted style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scaleX(-1)' }} />
                     ) : (
                         <video src={videoUrl} controls style={{ width: '100%', height: '100%' }} />
                     )}
