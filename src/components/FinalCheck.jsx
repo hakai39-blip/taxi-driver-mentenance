@@ -4,11 +4,20 @@ import { CheckCircle, Clock } from 'lucide-react';
 import { getStatus, updateStatus } from '../utils/db';
 import { requestNotificationPermission, showNotification } from '../utils/notifications';
 
+// アプリ起動用のURLスキーム（カスタムプロトコル）
 const SCHEMES = {
     'LINE': 'line://',
     'Discord': 'discord://',
     'Instagram': 'instagram://',
     'メッセージ+': 'messages://'
+};
+
+// アプリが開かなかった場合のWebフォールバック
+const WEB_URLS = {
+    'LINE': 'https://line.me/R/',
+    'Discord': 'https://discord.com/channels/@me',
+    'Instagram': 'https://www.instagram.com/',
+    'メッセージ+': null
 };
 
 const FinalCheck = () => {
@@ -23,11 +32,6 @@ const FinalCheck = () => {
     const user = JSON.parse(sessionStorage.getItem('currentUser') || '{}');
     const prevApprovedRef = useRef(false);
 
-    // アプリ起動はユーザーのタップ操作から呼び出す（useEffectからだとiOSでブロックされる）
-    const openApp = (platform) => {
-        const url = SCHEMES[platform];
-        if (url) window.location.href = url;
-    };
 
     useEffect(() => {
         requestNotificationPermission();
@@ -86,13 +90,22 @@ const FinalCheck = () => {
                         <p style={{ fontSize: '14px', color: '#333', marginBottom: '12px' }}>
                             管理者が点呼を開始しました。<br />下のボタンをタップして打ち合わせを始めてください。
                         </p>
-                        <button
+                        {/* <a>タグで直接URLスキームを開く。buttonのonClickより確実にアプリが起動する */}
+                        <a
+                            href={SCHEMES[pendingPlatform]}
                             className="btn btn-primary"
-                            style={{ fontSize: '16px', padding: '12px 24px' }}
-                            onClick={() => openApp(pendingPlatform)}
+                            style={{ fontSize: '16px', padding: '12px 24px', display: 'inline-block', textDecoration: 'none' }}
                         >
                             🚀 {pendingPlatform} を開く
-                        </button>
+                        </a>
+                        {WEB_URLS[pendingPlatform] && (
+                            <p style={{ fontSize: '12px', marginTop: '10px', color: '#666' }}>
+                                アプリが開かない場合は
+                                <a href={WEB_URLS[pendingPlatform]} target="_blank" rel="noopener noreferrer">
+                                    こちら（Web版）
+                                </a>
+                            </p>
+                        )}
                     </div>
                 )}
 
