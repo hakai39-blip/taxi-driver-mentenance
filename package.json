@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "node server.js",
     "server": "node server.js",
     "db:setup": "node db/setup.js",
     "build": "vite build",

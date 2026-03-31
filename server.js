@@ -260,7 +260,18 @@ function toStatusJson(row) {
     };
 }
 
-const PORT = 3001;
+// Reactアプリのビルド済みファイルを配信する（本番環境用）
+// npm run build で作られる dist フォルダの中身をそのまま返す
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// /api/... 以外のURLは全部Reactに任せる
+// React Router がURL管理をしているので、どのURLでもindex.htmlを返す
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
+// PORT は Render が自動で設定する環境変数を使う。ローカルでは 3001 を使う
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-    console.log(`API Server running on http://localhost:${PORT}`);
+    console.log(`API Server running on port ${PORT}`);
 });
