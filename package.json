@@ -6,12 +6,15 @@
   "scripts": {
     "dev": "vite",
     "server": "node server.js",
+    "db:setup": "node db/setup.js",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
     "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
     "express": "^4.21.2",
     "lucide-react": "^0.577.0",
     "react": "^19.2.4",
